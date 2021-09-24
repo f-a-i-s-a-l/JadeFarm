@@ -1,0 +1,35 @@
+#ce-send-message-button{
+    background-color: teal !important;
+}
+
+#ce-send-message-button:hover{
+    background-color: rgb(2, 168, 168) !important;
+}
+
+#new-chat-plus-button{
+    background-color: #05bf7f !important;
+    border-radius: 10px !important;
+}
+
+.ce-chat-unread-dot{
+    background-color: limegreen !important;
+}
+
+#ce-delete-chat-button{
+    background-color: white !important;
+}
+.ce-danger-button:hover, #ce-delete-chat-button:hover{
+    background-color: red !important;
+    color: white !important;
+}
+
+.ce-chat-subtitle-text, .ce-chat-title-text{
+    color: green;
+}
+
+.ce-my-message-bubble{
+    background-color: teal !important;
+}
+.ce-message-bubble-row span{
+    color: teal !important;
+}
