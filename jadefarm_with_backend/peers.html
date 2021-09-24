@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peers | JadeFarm</title>
+  <link rel="stylesheet" href="./peers.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+
+  <!--  --------------------------Nav bar---------------------------------  -->
+  <nav>
+    <div class="nav-left">
+      <a class="logo" href="/home">JadeFarm</a>
+
+      <ul>
+        <li> <a href="/home"> <i class="fas fa-home"></i> </a> </li>
+        <li> <a href="/peers" id="page-name" > <i class="fas fa-user-friends"></i> </a> </li>
+        <li> <a href="https://jadefarm.netlify.app/chats" target="_blank"> <i class="far fa-comments"></i> </a> </li>
+        <li> <a href="#"> <i class="fas fa-bell"></i> </a> </li>
+      </ul>
+
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <a href="#" class="nav-link search-icon"> <i class="fas fa-search"></i> </a>
+        <input type="text" placeholder="Search Your Profile">
+      </div>
+      <div class="nav-user-icon online">
+        <a href="/profile"> <img src="./static/dp_3.jpg"> </a>
+      </div>
+
+
+      <div>
+        
+        <ul>
+          <li> <a href="/settings"> <i class="fas fa-cog"></i> </a> </li>
+          <li> <a href="/logout"> <i class="fas fa-sign-out-alt"></i> </a> </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!--  --------------------------Left Sidebar---------------------------------  -->
+    <div class="left-sidebar">
+
+      <!-- ---------------------------------- Friend Request List ------------------------------ -->
+      <div class="user-all-friends">
+
+        <div class="title-description">
+          <h3>Peer Requests</h3>
+          <a href="">See All</a>
+        </div>
+
+        <p id="no-of-friends-request">491 Requests</p>
+
+        <div class="friend-box">
+
+          <a href="/peers_profile">
+            <div class="friend-profile">
+              <img src="./static/friends1.jpg" alt="Friends">
+              <div>
+                <span id="name">Naruto Uzumaki</span>
+                <div> <span id="confirm">Confirm</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="/peers_profile">
+            <div class="friend-profile">
+              <img src="./static/friends2.jpg" alt="Friends">
+              <div>
+                <span id="name">Sasuke Uchiha</span>
+                <div> <span id="confirm">Confirm</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="/peers_profile">
+            <div class="friend-profile">
+              <img src="./static/friends3.jpg" alt="Friends">
+              <div>
+                <span id="name">Sakura Haruno</span>
+                <div> <span id="confirm">Confirm</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="/peers_profile">
+            <div class="friend-profile">
+              <img src="./static/friends4.jpg" alt="Friends">
+              <div>
+                <span id="name">Hinata Hyuga</span>
+                <div> <span id="confirm">Confirm</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="/peers_profile">
+            <div class="friend-profile">
+              <img src="./static/friends5.png" alt="Friends">
+              <div>
+                <span id="name">Kakashi Hatake</span>
+                <div> <span id="confirm">Confirm</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends6.jpg" alt="Friends">
+              <div>
+                <span id="name">Jiraiya Namikaze</span>
+                <div> <span id="confirm">Confirm</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends7.jpg" alt="Friends">
+              <div>
+                <span id="name">Obito Uchiha</span>
+                <div> <span id="confirm">Confirm</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends8.jpg" alt="Friends">
+              <div>
+                <span id="name">Rin Nohara</span>
+                <div> <span id="confirm">Confirm</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends9.jpeg" alt="Friends">
+              <div>
+                <span id="name">Shikamaru Nara</span>
+                <div> <span id="confirm">Confirm</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- -------------------------------- Add Friends List -------------------------------- -->
+      <div class="user-all-friends">
+
+        <div class="title-description">
+          <h3>Explore Peers</h3>
+          <a href="">See More</a>
+        </div>
+
+        <p id="no-of-friends-request">People you may know</p>
+
+        <div class="friend-box">
+
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends1.jpg" alt="Friends">
+              <div>
+                <span id="name">Naruto Uzumaki</span>
+                <div> <span id="add-friend">Add Friend</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends2.jpg" alt="Friends">
+              <div>
+                <span id="name">Sasuke Uchiha</span>
+                <div> <span id="add-friend">Add Friend</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends3.jpg" alt="Friends">
+              <div>
+                <span id="name">Sakura Haruno</span>
+                <div> <span id="add-friend">Add Friend</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends4.jpg" alt="Friends">
+              <div>
+                <span id="name">Hinata Hyuga</span>
+                <div> <span id="add-friend">Add Friend</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends5.png" alt="Friends">
+              <div>
+                <span id="name">Kakashi Hatake</span>
+                <div> <span id="add-friend">Add Friend</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends6.jpg" alt="Friends">
+              <div>
+                <span id="name">Jiraiya Namikaze</span>
+                <div> <span id="add-friend">Add Friend</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends7.jpg" alt="Friends">
+              <div>
+                <span id="name">Obito Uchiha</span>
+                <div> <span id="add-friend">Add Friend</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends8.jpg" alt="Friends">
+              <div>
+                <span id="name">Rin Nohara</span>
+                <div> <span id="add-friend">Add Friend</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+          <a href="./peers_profile.html">
+            <div class="friend-profile">
+              <img src="./static/friends9.jpeg" alt="Friends">
+              <div>
+                <span id="name">Shikamaru Nara</span>
+                <div> <span id="add-friend">Add Friend</span> <span id="delete">Delete</span> </div>
+              </div>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+    <!--  --------------------------Right Sidebar---------------------------------  -->
+    <div class="right-sidebar">
+      <div class="my-friends">
+
+        <div class="title-my-friends">
+          <h3>Peers</h3>
+          <a href="">All Peers</a>
+        </div>
+
+        <p id="no-of-friends">1,469 Friends</p>
+
+        <div class="friend-box">
+
+          
+          <div> <a href="./peers_profile.html"> <img src="./static/friends1.jpg" alt="Friends"> </a>
+            <p>Naruto Uzumaki</p>
+          </div>
+
+          <div> <a href="./peers_profile.html"> <img src="./static/friends2.jpg" alt="Friends"> </a>
+            <p>Sasuke Uchiha</p>
+          </div>
+
+          <div> <a href="./peers_profile.html"> <img src="./static/friends3.jpg" alt="Friends"> </a>
+            <p>Sakura Haruno</p>
+          </div>
+
+          <div> <a href="./peers_profile.html"> <img src="./static/friends4.jpg" alt="Friends"> </a>
+            <p>Hinata Hyuga</p>
+          </div>
+
+          <div> <a href="./peers_profile.html"> <img src="./static/friends5.png" alt="Friends"> </a>
+            <p>Kakashi Hatake</p>
+          </div>
+
+          <div> <a href="./peers_profile.html"> <img src="./static/friends6.jpg" alt="Friends"> </a>
+            <p>Jiraiya Namikaze</p>
+          </div>
+
+          <div> <a href="./peers_profile.html"> <img src="./static/friends7.jpg" alt="Friends"> </a>
+            <p>Obito Uchiha</p>
+          </div>
+
+          <div> <a href="./peers_profile.html"> <img src="./static/friends8.jpg" alt="Friends"> </a>
+            <p>Rin Nohara</p>
+          </div>
+
+          <div> <a href="./peers_profile.html"> <img src="./static/friends9.jpeg" alt="Friends"> </a>
+            <p>Shikamaru</p>
+          </div>
+
+          <div> <img src="./static/friends1.jpg" alt="Friends">
+            <p>Naruto Uzumaki</p>
+          </div>
+          <div> <img src="./static/friends2.jpg" alt="Friends">
+            <p>Sasuke</p>
+          </div>
+          <div> <img src="./static/friends3.jpg" alt="Friends">
+            <p>Sakura Haruno</p>
+          </div>
+          <div> <img src="./static/friends4.jpg" alt="Friends">
+            <p>Hinata</p>
+          </div>
+          <div> <img src="./static/friends5.png" alt="Friends">
+            <p>Kakashi Hatake</p>
+          </div>
+          <div> <img src="./static/friends6.jpg" alt="Friends">
+            <p>Jiraiya</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

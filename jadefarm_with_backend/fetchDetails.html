@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JadeFarm | Profile set up</title>
+    <link rel="stylesheet" href="./fetchDetails.css">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+    <!-- Container contains the Logo and Login Panel -->
+    <div class="container">
+        <!-- <div class="logo">
+            <a href="./home.html" class="ft-ltorange sz-10x wt-700">JADEFARM</a>
+        </div> -->
+        <div class="login">
+            <div class="greet ft-ltorange wt-600 sz-4x">
+                Let's set up your account
+            </div>
+            <form action="/setup" class="form" method="POST">
+                <input type="text" name="fullName" id="user" placeholder="Enter your full name" required>
+                <input type="text" name="deptName" id="user" placeholder="What's your Department ?" required>
+                <input type="text" name="batch" id="user" placeholder="Batch (yyyy - yyyy)" required>
+                <input type="text" name="city" id="rollnum" placeholder="Where do you live ?" required>
+                <textarea name="intro" id="" cols="4" rows="1" placeholder="Write here something about yourself" required></textarea>
+                <button type="submit" id="login-btn" class="ft-ltorange wt-600">Go to your Profile</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

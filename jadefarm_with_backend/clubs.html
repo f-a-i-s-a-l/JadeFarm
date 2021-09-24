@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clubs | JadeFarm</title>
+  <link rel="stylesheet" href="./clubs.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+
+  <!--  --------------------------Nav bar---------------------------------  -->
+  <nav>
+    <div class="nav-left">
+      <a class="logo" href="/home">JadeFarm</a>
+
+      <ul>
+        <li> <a href="/home"> <i class="fas fa-home"></i> </a> </li>
+        <li> <a href="/peers"> <i class="fas fa-user-friends"></i> </a> </li>
+        <li> <a href="https://jadefarm.netlify.app/chats" target="_blank"> <i class="far fa-comments"></i> </a> </li>
+        <li> <a href="#"> <i class="fas fa-bell"></i> </a> </li>
+      </ul>
+
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <a href="#" class="nav-link search-icon"> <i class="fas fa-search"></i> </a>
+        <input type="text" placeholder="Search Your Profile">
+      </div>
+      <div class="nav-user-icon online">
+        <a href="/profile"> <img src="./static/dp_3.jpg"> </a>
+      </div>
+
+
+      <div>
+
+        <ul>
+          <li> <a href="/settings"> <i class="fas fa-cog"></i> </a> </li>
+          <li> <a href="/logout"> <i class="fas fa-sign-out-alt"></i> </a> </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!--  --------------------------Left Sidebar---------------------------------  -->
+    <div class="left-sidebar">
+
+      <!-- ---------------------------------- Joined Groups List ------------------------------ -->
+      <div class="user-all-friends">
+
+        <div class="title-description">
+          <h3>Clubs</h3>
+          <a href="">See All</a>
+        </div>
+
+        <p id="no-of-friends-request">Clubs you've joined</p>
+
+        <div class="friend-box">
+          <a href="/clubs_profile">
+            <div class="friend-profile">
+              <img src="./static/club1.png" alt="Friends">
+              <div>
+                <span id="joined-club-name">Anime Club</span>
+              </div>
+            </div>
+          </a>
+          <div class="friend-profile">
+            <img src="./static/club2.png" alt="Friends">
+            <div>
+              <span id="joined-club-name">Coding Club</span>
+            </div>
+          </div>
+          <div class="friend-profile">
+            <img src="./static/club3.jpg" alt="Friends">
+            <div>
+              <span id="joined-club-name">Photography Club</span>
+            </div>
+          </div>
+          <div class="friend-profile">
+            <img src="./static/club4.jpg" alt="Friends">
+            <div>
+              <span id="joined-club-name">Painting Club</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- -------------------------------- Add Clubs List -------------------------------- -->
+      <div class="user-all-friends">
+
+        <div class="title-description">
+          <h3>Explore Clubs</h3>
+          <a href="">See More</a>
+        </div>
+
+        <p id="no-of-friends-request">Clubs you may want to join</p>
+
+        <div class="friend-box">
+
+          <div class="friend-profile">
+            <img src="./static/add-club1.jpg" alt="Friends">
+            <div>
+              <span id="name">Science Club</span>
+              <div> <span id="join-group">Join Group</span> </div>
+            </div>
+          </div>
+          <div class="friend-profile">
+            <img src="./static/add-club2.jpg" alt="Friends">
+            <div>
+              <span id="name">Mountaineering & Hiking Club</span>
+              <div> <span id="join-group">Join Group</span> </div>
+            </div>
+          </div>
+          <div class="friend-profile">
+            <img src="./static/add-club3.jpg" alt="Friends">
+            <div>
+              <span id="name">Motorsports Club</span>
+              <div> <span id="join-group">Join Group</span> </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+    <!--  --------------------------Right Sidebar---------------------------------  -->
+    <div class="main-content">
+
+      <!-- ---------------------------------------  POST 1  ---------------------------------------- -->
+      <div class="post-heading">
+        <h6>Recent Posts</h6>
+      </div>
+
+      <div class="post-container">
+
+        <div class="user-profile">
+          <!-- <img src="/static/dp_2.jpg" alt="user_dp"> -->
+          <img src="./static/club1.png" alt="Display-Picture">
+
+          <div>
+            <span id="name"> <span>Anime Club</span> </span>
+            <span class="dots"><i class="fas fa-ellipsis-v"></i></span> <br>
+            <div id="date">Sasuke Uchiha</div>
+            <div id="date">February 29,2020 10:10am</div>
+
+          </div>
+        </div>
+
+        <div class="write-post">
+          <p>Naruto 🖤 Jujutsu Kaisen
+          </p>
+        </div>
+        <div class="image-post">
+          <img src="./static/club_post1.png" alt="post">
+        </div>
+
+        <div class="post-icons">
+          <span id="red"> <i class="far fa-heart"> <span>Love</span> </i> </span>
+          <span id="blue"> <i class="fas fa-comment-dots"> Comment </i> </span>
+          <span id="yellow"> <i class="fas fa-share"> Share </i> </span>
+        </div>
+
+      </div>
+      <!-- ---------------------------------------  POST 2  ---------------------------------------- -->
+
+      <div class="post-container">
+
+        <div class="user-profile">
+          <!-- <img src="/static/dp_2.jpg" alt="user_dp"> -->
+          <img src="./static/club2.png" alt="Display-Picture">
+
+          <div>
+            <span id="name"> <span>Coding Club</span> </span>
+            <span class="dots"><i class="fas fa-ellipsis-v"></i></span> <br>
+            <div id="date">Rin Nohara</div>
+            <div id="date">January 01,2020 08:11pm</div>
+
+          </div>
+        </div>
+
+        <div class="write-post">
+          <p>This is what our code club looks like...
+          </p>
+        </div>
+        <div class="image-post">
+          <img src="./static/code-club_post1.jpg" alt="post">
+        </div>
+        <div class="post-icons">
+          <span id="red"> <i class="far fa-heart"> <span>Love</span> </i> </span>
+          <span id="blue"> <i class="fas fa-comment-dots"> Comment </i> </span>
+          <span id="yellow"> <i class="fas fa-share"> Share </i> </span>
+        </div>
+
+      </div>
+      <!-- ---------------------------------------  POST 3  ---------------------------------------- -->
+
+      <div class="post-container">
+
+        <div class="user-profile">
+          <!-- <img src="/static/dp_2.jpg" alt="user_dp"> -->
+          <img src="./static/club4.jpg" alt="Display-Picture">
+
+          <div>
+            <span id="name"> <span>Painting Club</span> </span>
+            <span class="dots"><i class="fas fa-ellipsis-v"></i></span> <br>
+            <div id="date">Sakura Haruno</div>
+            <div id="date">November 25,2019 03:13pm</div>
+
+          </div>
+        </div>
+
+        <div class="write-post">
+          <p>Rate it out of 10...
+          </p>
+        </div>
+        <div class="image-post">
+          <img src="./static/painting-club_post1.jpg" alt="post">
+        </div>
+        <div class="post-icons">
+          <span id="red"> <i class="far fa-heart"> <span>Love</span> </i> </span>
+          <span id="blue"> <i class="fas fa-comment-dots"> Comment </i> </span>
+          <span id="yellow"> <i class="fas fa-share"> Share </i> </span>
+        </div>
+
+      </div>
+      <!-- ---------------------------------------  POST 4  ---------------------------------------- -->
+
+      <div class="post-container">
+
+        <div class="user-profile">
+          <!-- <img src="/static/dp_2.jpg" alt="user_dp"> -->
+          <img src="./static/club3.jpg" alt="Display-Picture">
+
+          <div>
+            <span id="name"> <span>Photography Club</span> </span>
+            <span class="dots"><i class="fas fa-ellipsis-v"></i></span> <br>
+            <div id="date">Kakashi Hatake</div>
+            <div id="date">October 15,2019 09:15am</div>
+
+          </div>
+        </div>
+
+        <div class="write-post">
+          <p>It is with an extremely heavy heart that JUPC informs all that an act of vandalism was observed today when
+            we found one of our exhibition setups near the Central Libray torn apart. It was quite easy to conclude that
+            it was torn by humans and not due to natural phenomena like wind or rain.
+            This year we conducted the exhibitions in the campus in order to give more people from the University an
+            opportunity to engage with JUPC and various photographic practices as well. But these kind of unfortunate
+            incidents make it terribly hard to keep alive our will to do good events in the campus in future.
+            In the absence of any concrete proof we are unable to make any accusations against anyone but this is a
+            request to the administration to look into these matter(s) so that such incidents could be prevented in
+            future.
+            #montage20 #jupc #vandalism #jadavpuruniversity
+          </p>
+        </div>
+        <!-- <div class="image-post"> -->
+        <!-- <img src="" alt=""> -->
+        <!-- </div> -->
+        <div class="post-icons">
+          <span id="red"> <i class="far fa-heart"> <span>Love</span> </i> </span>
+          <span id="blue"> <i class="fas fa-comment-dots"> Comment </i> </span>
+          <span id="yellow"> <i class="fas fa-share"> Share </i> </span>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

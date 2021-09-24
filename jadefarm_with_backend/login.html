@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JadeFarm | Login</title>
+    <link rel="stylesheet" href="./signin.css">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+    <!-- Container contains the Logo and Login Panel -->
+    <div class="container">
+        <div class="logo">
+            <a href="#" class="ft-ltorange sz-10x wt-700">JADEFARM</a>
+        </div>
+        <div class="login">
+            <div class="greet ft-ltorange wt-600 sz-4x">
+                Glad to See You Back!
+            </div>
+            <form action="/homepage" class="form" method="POST">
+                <input type="text" name="username" id="user" placeholder="User Name" required>
+                <input type="password" name="passwd" id="password" placeholder="Password" required>
+                <button type="submit" id="login-btn" class="ft-ltorange wt-600">Login</button>
+                <a href="/" class="ft-ltorange wt-600">Not registered yet?</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

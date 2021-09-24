@@ -1,0 +1,435 @@
+*{
+    margin-right: 0;
+    padding: 0;
+}
+body{
+    /* background-color:#e6e6e6; */
+    background-color:rgba(218, 218, 218, 0.897) !important;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+/*                                                Nav-Bar Styles                                                   */
+/* --------------------------------------------------------------------------------------------------------------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color:#ff8533; */
+    background-color: rgb(20 165 20 / 100%);
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+.logo{
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    /* border: 2px solid red; */
+}
+.logo:hover{
+    color: rgba(255, 255, 255, 0.979);
+}
+.nav-left,.nav-right{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+.nav-left ul ,.nav-right ul{
+    align-items: center;
+}
+.nav-left ul li,.nav-right ul li{
+    display: inline-block;
+    /* border: 2px solid red; */
+    list-style: none;
+    margin-top: 15px;
+    padding: 0px 20px;
+    /* font-size: 22px; */
+    font-size: 22px;
+}
+.nav-left ul li a,.nav-right ul li a{
+    color: white;
+    margin-top: 100px;
+    text-decoration: none;
+    padding: 20px 5px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    background: #efefef;
+    height:40px;
+    width:310px;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+.search-icon{
+    font-size: 1.1rem;
+    color:black !important;
+}
+.search-icon i:hover{
+    color: rgb(187, 187, 180);
+}
+
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+.nav-user-icon img{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 60px;
+}
+.nav-user-icon{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+.nav-left ul li a:hover,.nav-right ul li a:hover{
+    color:black;
+    border-bottom: 2px solid black;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/*                                          Left-Side Bar Styles                                                   */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Contrail+One&family=Josefin+Sans&display=swap');
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+.left-sidebar{
+    /* background: #fff; */
+    background: rgba(218, 218, 218, 0.897);
+    border-radius: 15px;
+    flex-basis: 31.5%;
+    position: sticky;
+    top: 70px;
+    height: auto;
+    width: 75%;
+    align-self: flex-start;
+    padding: 0px 5px 0px 0px;
+}
+/* .left-sidebar .friend-requests{
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 12px 5px;
+}
+.left-sidebar .friend-dp{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+}
+.left-sidebar .friend-dp img{
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+    margin-left: 13%;
+    margin-top: 13%;
+}
+.left-sidebar .friend-name{
+    font-family: 'Chewy', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2%;
+    padding: 2%;
+
+} */
+
+.user-all-friends{
+    background-color: #fff;
+    margin: 25px 0;
+    /* border: 3px solid red; */
+    border-radius: 15px;
+    padding: 12px 5px;
+    
+}
+.title-description h3{
+    font-size: 1.5rem;
+}
+.title-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3px 8px;   
+}
+.title-description a{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: .9rem;
+    /* border: 1px solid red; */
+    padding: 3px 8px;
+}
+.title-description a:hover {
+    background-color:#e6e6e6;
+}
+.friend-box{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    /* border: 1px solid blue; */
+    grid-gap: 22px 7px;
+    /* border: 2px solid green; */
+    margin: 1px 5px 30px 5px;
+}
+
+.friend-box img{
+    width: 20px;
+    height: 100px;
+    border-radius: 12px;
+}
+.friend-box p{
+    display: inline-block;
+    text-align: center;
+    font-size: .8rem;
+    margin-left: 0px;
+}
+#no-of-friends-request{
+    font-size: .85rem;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.friend-profile{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8px 0px;
+}
+.friend-profile img{
+    width: 30%;
+    border-radius: 12px;
+    margin: 5px 15px 5px 5px;
+    margin-left: 20px;
+}
+
+.friend-profile #name{
+    font-size: 15px;
+    /* color: red; */
+    display: inline-block;
+    text-align: center;
+}
+.friend-profile #joined-club-name{
+    font-size: 15px;
+    /* color: red; */
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+    padding: 0px 20px 0px 0px;
+}
+.friend-profile div{
+    display: inline-block;
+    text-align: center;
+}
+.friend-profile span{
+    font-size:14px ;
+}
+.friend-profile div div{
+    margin-top: 15px;
+}
+#confirm{
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-left: 18px;
+    margin-right: 5px;
+    color: white;
+    background-color: rgb(144, 197, 144);
+}
+#delete{
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: white;
+    background-color: rgb(180, 76, 76);
+}
+#add-friend{
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-left: 18px;
+    margin-right: 5px;
+    color: white;
+    background-color: #0153a4;
+}
+#join-group{
+    border-radius: 8px;
+    padding: 8px 35px;
+    margin-left: 20px;
+    margin-right: 5px;
+    color: white;
+    background-color: #0153a4;
+}
+.friend-profile:hover{
+    background-color: #e6e6e6;
+}
+#confirm:hover{
+    background-color: rgb(98, 199, 98);
+    cursor: pointer;
+}
+#delete:hover{
+    background-color: rgb(173, 32, 32);
+    cursor: pointer;
+}
+#add-friend:hover{
+    background-color: #1681ec;
+    cursor: pointer;
+}
+#join-group:hover{
+    background-color: #1681ec;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/*                                          Right-Side Bar Styles                                                   */
+/* --------------------------------------------------------------------------------------------------------------- */
+.main-content{
+    background-color: rgba(218, 218, 218, 0.897);
+    border-radius: 15px;
+    flex-basis: 62%;
+    position: sticky;
+    top: 111px;
+    height: auto;
+    align-self: flex-start;
+}
+.main-content h6{
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+    bottom: 200px;
+}
+.user-profile p {
+    font-size: .9rem;
+    margin-bottom: -4px;
+    font-weight: 600px;
+    margin-left: 12px;
+    margin-top: 10px;
+    color: #626262 ;
+}
+.user-profile small{
+    font-size:12px ;
+    margin-left: 12px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/*                                                      Posts                                                      */
+/* --------------------------------------------------------------------------------------------------------------- */
+.post-heading{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 25px 15px 25px;
+    margin: 25px 0;
+}
+.post-container{
+    /* background-color: rgb(241, 167, 30); */
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin: 25px 0;
+    /* border: 1px solid blue; */
+}
+.post-container .user-profile span{
+    font-size: 0.7rem;
+    margin-left: 11px;
+    color: black;
+}
+.post-container .write-post p{
+    margin: 20px 0;
+}
+.image-post img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px;
+}
+.post-container .user-profile #name span{
+    font-size: .9rem;
+    margin-bottom: -4px;
+    font-weight: 600px;
+    margin-left: 2px;
+    margin-top: 10px;
+    color: #626262 ;
+    margin-right: 250px;
+    /* border: 1px solid red; */
+    font-weight: 650;
+}
+.post-container .user-profile #date{
+    font-size: 12px;
+    margin-left: 12px;
+    /* border: 1px solid blue; */
+    display: inline-block;
+}
+.post-container .dots{
+    margin-left: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.post-container .dots i{
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+.post-icons{
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 3px 20px;
+    margin: 25px 5px;
+    
+}
+.post-icons i{
+    /* border: 1px solid blue; */
+    text-align: center;
+    margin: 0px 15px;
+    padding: 4px 15px;
+}
+.post-icons span{
+    text-align: center;
+    margin-left: 5px;
+    /* border: 1px solid green; */
+}
+.post-icons i:hover{
+    background-color: #e6e6e6;
+}
+.post-icons #red i:hover{
+    transform: scale(1.2);
+    color: red;
+    cursor: pointer;
+}
+.post-icons #blue i:hover{
+    transform: scale(1.2);
+    color: rgb(0, 119, 255);
+    cursor: pointer;
+}
+.post-icons #yellow i:hover{
+    transform: scale(1.2);
+    color: green;
+    cursor: pointer;
+}
